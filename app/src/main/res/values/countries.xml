@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="country_names">
+        <item>Bhutan</item>
+        <item>Colombia</item>
+        <item>Italy</item>
+        <item>Jamaica</item>
+        <item>Kazakhstan</item>
+        <item>Kenya</item>
+    </string-array>
+    <array name="country_icons">
+        <item>@drawable/bandeira_de_bhutan</item>
+        <item>@drawable/bandeira_da_comlombia</item>
+        <item>@drawable/bandeira_da_italia</item>
+        <item>@drawable/bandeira_da_jamaica</item>
+        <item>@drawable/bandeira_do_kazakistao</item>
+        <item>@drawable/bandeira_do_kenya</item>
+    </array>
+
+
+
+</resources>

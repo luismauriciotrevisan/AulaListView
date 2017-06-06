@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    tools:context="com.myapp.example.aulalistview.MainActivity">
+
+    <TextView
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_gravity="center_horizontal"
+        android:text="A Primeira ListView a gente nunca esquece!"
+        android:textColor="@color/colorPrimaryDark"
+        android:textStyle="bold|italic"/>
+
+    <!-- A ListView é como uma janela por trás da qual corre uma longa lista com várias
+     linhas preenchidas com diferentes ítens. O tamanho desta janela vai determinar
+     o quanto da lista o usuário pode ver do lado de fora, através da tela. Nossa janela
+     foi definida com height="wrap_content", ou seja, ela vai ocupar a altura necessária
+     para exibir todos os ítens da lista, limitada ao espaço ainda disponível na tela. -->
+    <ListView
+        android:id="@+id/ListView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

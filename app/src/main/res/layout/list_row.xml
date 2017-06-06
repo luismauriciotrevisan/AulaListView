@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--    Cada linha da lista pode ser uma nova mensagem de Chat ou Email. Cada ítem da linha pode
+    ser a imagem, nome do remetente e assunto, por exemplo. No nosso exemplo são badeiras
+    seguidas pelo nome do país. Estes ítens são definidos aqui-->
+
+<!-- Este Layout é solicitado dinamicamente à medida que mais Views sejam necessárias.
+Da mesma forma, Views que não estão sendo mostradas na janela podem ser reaproveitadas
+ para exibir outos conteúdos. Isto é feito pelo RecyclerView-->
+
+<!-- RecyclerView-->
+<!-- O RecyclerView permite ao App utilizar as mesmas Views para novas imagens e textos!-->
+<!-- O reuso proporciona uma navegação mais suave e rápido porque não é necessário inflar novas Views -->
+<!-- O RecyclerView é gerenciado pelo próprio Android e se comunica diretamente com o ListAdapter setado para a ListView-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <ImageView
+        android:id="@+id/img_01_view"
+        android:layout_width="100dp"
+        android:scaleType="centerCrop"
+        android:layout_height="100dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tv_01_view"
+        android:textSize="32sp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="16dp" />
+
+</LinearLayout>
