@@ -6,31 +6,67 @@
 
 <!-- Este Layout é solicitado dinamicamente à medida que mais Views sejam necessárias.
 Da mesma forma, Views que não estão sendo mostradas na janela podem ser reaproveitadas
- para exibir outos conteúdos. Isto é feito pelo RecyclerView-->
+ para exibir outos conteúdos.-->
 
-<!-- RecyclerView-->
-<!-- O RecyclerView permite ao App utilizar as mesmas Views para novas imagens e textos!-->
-<!-- O reuso proporciona uma navegação mais suave e rápido porque não é necessário inflar novas Views -->
-<!-- O RecyclerView é gerenciado pelo próprio Android e se comunica diretamente com o ListAdapter setado para a ListView-->
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
-    
-    <ImageView
-        android:id="@+id/img_01_view"
-        android:layout_width="100dp"
-        android:scaleType="centerCrop"
-        android:layout_height="100dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="16dp" />
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:shrinkColumns="2"
+    android:stretchColumns="1">
 
-    <TextView
-        android:gravity="center"
-        android:id="@+id/tv_01_view"
-        android:textSize="32sp"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginBottom="16dp" />
+    <TableRow>
 
-</LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_01_view"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="4dp"
+                android:layout_marginRight="4dp"
+                android:scaleType="centerCrop" />
+
+            <CheckBox
+                android:id="@+id/cb_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="false" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_01_view"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginBottom="4dp"
+            android:gravity="center"
+            android:textSize="18sp" />
+
+
+        <Button
+            android:id="@+id/bt_dec"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="-" />
+
+        <TextView
+            android:id="@+id/tv_qtd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/bt_inc"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:text="+" />
+
+
+    </TableRow>
+
+</TableLayout>

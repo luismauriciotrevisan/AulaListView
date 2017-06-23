@@ -20,6 +20,11 @@
         android:textColor="@color/colorPrimaryDark"
         android:textStyle="bold|italic"/>
 
+    <TextView
+        android:id="@+id/tv_row_data"
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
     <!-- A ListView é como uma janela por trás da qual corre uma longa lista com várias
      linhas preenchidas com diferentes ítens. O tamanho desta janela vai determinar
      o quanto da lista o usuário pode ver do lado de fora, através da tela. Nossa janela
